@@ -32,7 +32,7 @@ frontend:
       commands:
         - cd src/react-frontend
         - npm install
-		- npm install @aws-amplify/cache
+	- npm install @aws-amplify/cache
     build:
       commands:
         - npm run build
