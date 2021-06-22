@@ -31,8 +31,8 @@ frontend:
     preBuild:
       commands:
         - cd src/react-frontend
-		- npm install @aws-amplify/cache
         - npm install
+		- npm install @aws-amplify/cache
     build:
       commands:
         - npm run build
