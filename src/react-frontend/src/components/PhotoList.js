@@ -60,6 +60,7 @@ export const S3ImageUpload = (props) => {
     const imageId = uuid();
     const fileName = 'uploads/' + imageId + '.' + file.name.split('.').pop();
     const user = await Auth.currentAuthenticatedUser();
+	const credentials = await Auth.currentUserCredentials()
 
     let createPhotoArg = {
       id: imageId,
