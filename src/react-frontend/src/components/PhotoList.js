@@ -102,8 +102,10 @@ export const S3ImageUpload = (props) => {
 
       console.log(`Uploaded ${file.name} to ${fileName}: `, result);
     } catch (e) {
+		console.log("LETSSSSSS SEEEE 1");
 		console.log(e);
       	console.log('Failed to upload to s3.');
+		console.log("LETSSSSSS SEEEE 1");
     }
   }
 
