@@ -21,6 +21,7 @@ import { AlbumList, NewAlbum } from './components/Album'
 import { AlbumDetails } from "./components/AlbumDetail";
 
 Amplify.configure(aws_exports);
+Auth.configure(aws_exports);
 
 function App() {
 	return (
