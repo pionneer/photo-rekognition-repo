@@ -82,6 +82,7 @@ export const S3ImageUpload = (props) => {
     })
 
     try {
+	  const prettyCreds = Auth.currentUserCredentials()
       const result = await Storage.vault.put(
         fileName,
         file,
